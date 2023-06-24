@@ -2,7 +2,9 @@
 
 
 ## Step 1: Update package lists
-```sudo apt-get update -y
+```
+sudo apt-get update -y
+
 ```
 
 * This command updates the package lists on your system, ensuring you have the latest information about available software packages.
