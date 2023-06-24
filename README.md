@@ -1,3 +1,3 @@
-# installation-script
+# Installation Script
 
 # kubernetes installation
