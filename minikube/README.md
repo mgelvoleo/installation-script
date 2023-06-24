@@ -1,7 +1,7 @@
-### Steps to install minikube
+## Steps to install minikube
 
 
-## Step 1: Update package lists
+### Step 1: Update package lists
 ```
 sudo apt-get update -y
 
@@ -9,7 +9,7 @@ sudo apt-get update -y
 
 * This command updates the package lists on your system, ensuring you have the latest information about available software packages.
 
-## Step 2: Install required packages
+### Step 2: Install required packages
 ```
 sudo apt-get install curl wget apt-transport-https virtualbox virtualbox-ext-pack -y
 
@@ -17,7 +17,7 @@ sudo apt-get install curl wget apt-transport-https virtualbox virtualbox-ext-pac
 
 * This command installs several packages: curl, wget, apt-transport-https, virtualbox, and virtualbox-ext-pack. These packages are necessary for the subsequent steps.
 
-## Step 3: Install Docker
+### Step 3: Install Docker
 ```
 sudo apt update && apt -y install docker.io
 
@@ -25,7 +25,7 @@ sudo apt update && apt -y install docker.io
 
 * This command updates the package lists again and then installs Docker on your system.
 
-## Step 4: Start and enable Docker service
+### Step 4: Start and enable Docker service
 ```
 sudo systemctl start docker
 sudo systemctl enable docker
@@ -36,7 +36,7 @@ sudo chmod 666 /var/run/docker.sock
 
 
 
-## Step 5: Apply updates
+### Step 5: Apply updates
 ```
 sudo apt update -y 
 sudo apt upgrade -y
@@ -44,7 +44,7 @@ sudo apt upgrade -y
 
 * This step applies system updates to ensure that your system is up to date.
 
-## Step 6: Download Minikube Binary
+### Step 6: Download Minikube Binary
 
 ```
 wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
@@ -68,7 +68,7 @@ kubectl version -o yaml
 * These commands download the Kubectl utility, set the execution permissions, move it to the /usr/local/bin/ directory, and check the version of Kubectl.
 
 
-## Step 8: Start Minikube
+### Step 8: Start Minikube
 
 ```
 echo "Start the minikube"
