@@ -34,7 +34,13 @@ sudo chmod 666 /var/run/docker.sock
 
 * These commands start the Docker service and enable it to automatically start on system boot. The third command modifies the permissions of the Docker socket file.
 
-
+* NOTE If you want to avoid typing sudo whenever you run the docker command, add your username to the docker group
+```
+sudo usermod -aG docker ${USER}
+su - ${USER}
+groups
+sudo usermod -aG docker username
+```
 
 ### Step 5: Apply updates
 ```
@@ -79,3 +85,5 @@ minikube status
 * These commands start Minikube and check its status.
 
 * That's it! By following these steps, you will update your system, install Docker, Minikube, and Kubectl, and start Minikube for further usage.
+
+
