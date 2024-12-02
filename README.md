@@ -1,3 +1,11 @@
-# Installation 
+# Kubernetes Multi Node Cluster Setup
 
-# kubernetes installation
+**Master**
+
+---
+
+1. Access the master node
+
+```
+ssh mgelvoleo@192.168.1.40
+```
