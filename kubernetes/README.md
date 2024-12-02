@@ -20,8 +20,18 @@ sudo vi /etc/hosts
 192.168.1.50 worker1.local   worker1
 192.168.1.60 worker2.local   worker2
 
-3. Config the resolve file for dns
+3. The file is typically located at:
 
+```
+sudo vi /etc/systemd/resolved.conf
+
+```
+
+```
+[Resolve]
+DNS=8.8.8.8 8.8.4.4
+FallbackDNS=1.1.1.1 1.0.0.1
+```
 
 4. Configure the host  file
 
